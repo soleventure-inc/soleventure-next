@@ -1,0 +1,15 @@
+<svg width="46" height="45" viewBox="0 0 46 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M17.1875 33.8125C26.4038 33.8125 33.875 26.3413 33.875 17.125C33.875 7.90875 26.4038 0.4375 17.1875 0.4375C7.97125 0.4375 0.5 7.90875 0.5 17.125C0.5 26.3413 7.97125 33.8125 17.1875 33.8125ZM17.1875 28.5C23.4697 28.5 28.5625 23.4072 28.5625 17.125C28.5625 10.8428 23.4697 5.75 17.1875 5.75C10.9053 5.75 5.8125 10.8428 5.8125 17.125C5.8125 23.4072 10.9053 28.5 17.1875 28.5Z" fill="#F7EFE3"/>
+<circle cx="17.1875" cy="17.125" r="15.6875" stroke="#0F1726" stroke-width="2"/>
+<circle cx="17.1875" cy="17.125" r="10.375" stroke="#0F1726" stroke-width="2"/>
+<circle cx="17.1875" cy="14.75" r="3.5" stroke="#0F1726" stroke-width="2"/>
+<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="5" y="5" width="24" height="24">
+<circle cx="17.1875" cy="17.125" r="11.375" fill="#404040"/>
+</mask>
+<g mask="url(#mask0)">
+<circle cx="17.1875" cy="29.7812" r="10.5938" stroke="#0F1726" stroke-width="2"/>
+</g>
+<line x1="28.6446" y1="27.1679" x2="33.1759" y2="31.6991" stroke="#0F1726" stroke-width="2"/>
+<rect x="30.9552" y="34.9445" width="7.4576" height="2.8125" transform="rotate(-45 30.9552 34.9445)" stroke="#0F1726" stroke-width="2"/>
+<path d="M32.9362 36.9256L38.2096 31.6523L41.6536 35.0963C43.1098 36.5525 43.1098 38.9135 41.6536 40.3696C40.1975 41.8258 37.8365 41.8258 36.3803 40.3696L32.9362 36.9256Z" fill="#F7EFE3" stroke="#0F1726" stroke-width="2"/>
+</svg>
