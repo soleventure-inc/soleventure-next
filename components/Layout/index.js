@@ -9,7 +9,7 @@ import Header from '../Header'
 export default function Layout({ children, pageTitle, description, ...props }) {
   return (
     <>
-      <ThemeProvider theme={ theme }>
+      <ThemeProvider theme={theme}>
         <Normalize />
         <GlobalStyle/>
         <Head>

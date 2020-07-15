@@ -1,21 +1,20 @@
 import { createGlobalStyle } from 'styled-components'
-import { normalize } from 'styled-normalize'
 
 export const GlobalStyle = createGlobalStyle`
   :root {
-    --baseDark: ${({ theme }) => theme.baseDark};
-    --baseMedium: ${({ theme }) => theme.baseMedium};
-    --baseLight: ${({ theme }) => theme.baseLight};
-    --white: ${({ theme }) => theme.white};
-    --primary: ${({ theme }) => theme.primary};
-    --primaryDark: ${({ theme }) => theme.primaryDark};
-    --beige: ${({ theme }) => theme.beige};
-    --beigeDark: ${({ theme }) => theme.beigeDark};
-    --red: ${({ theme }) => theme.red};
-    --orange: ${({ theme }) => theme.orange};
-    --pink: ${({ theme }) => theme.pink};
-    --green: ${({ theme }) => theme.green};
-    --teal: ${({ theme }) => theme.teal};
+    --baseDark: ${({ theme }) => theme.colors.baseDark};
+    --baseMedium: ${({ theme }) => theme.colors.baseMedium};
+    --baseLight: ${({ theme }) => theme.colors.baseLight};
+    --white: ${({ theme }) => theme.colors.white};
+    --primary: ${({ theme }) => theme.colors.primary};
+    --primaryDark: ${({ theme }) => theme.colors.primaryDark};
+    --beige: ${({ theme }) => theme.colors.beige};
+    --beigeDark: ${({ theme }) => theme.colors.beigeDark};
+    --red: ${({ theme }) => theme.colors.red};
+    --orange: ${({ theme }) => theme.colors.orange};
+    --pink: ${({ theme }) => theme.colors.pink};
+    --green: ${({ theme }) => theme.colors.green};
+    --teal: ${({ theme }) => theme.colors.teal};
   }
 
   html {

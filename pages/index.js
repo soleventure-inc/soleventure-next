@@ -1,18 +1,41 @@
 import Layout from '@components/Layout'
+import { Section, Container, Grid, Col } from '@components/Grid'
+import styled from 'styled-components'
+
+const Hero = styled(Section)`
+  height: 655px;
+  overflow-y: hidden;
+  padding-bottom: ${({ theme }) => theme.space[6]};
+  text-align: left;
+  background: var(--primary);
+  color: var(--white);
+  @media screen and (max-width: ${({ theme }) => theme.breakpoints[4]}) {
+    text-align: center;
+  }
+`
 
 const Index = ({ title, description, ...props }) => {
   return (
     <>
       <Layout pageTitle={title} description={description}>
-        <h1>Heading 1</h1>
-        <h2>Heading 2</h2>
-        <h3>Heading 3</h3>
-        <h4>Heading 4</h4>
-        <h5>Heading 5</h5>
-        <h6>Heading 6</h6>
-        <p className="lead">This is leading text</p>
-        <p>This is a paragraph</p>
-        <small>This is small text</small>
+        <Hero>
+          <Container>
+            <Grid>
+              <Col>
+                <h1
+                  style={{
+                    marginTop: '88px'
+                  }}
+                >Employ Yourself</h1>
+                <h5 style={{
+                  color: 'var(--teal)'
+                }}>The back-office platform for your company of one</h5>
+                <p className="lead">Start your company. Access personal benefits. Grow with our community of self-employed professionals.</p>
+              </Col>
+              <Col></Col>
+            </Grid>
+          </Container>
+        </Hero>
       </Layout>
     </>
   )

@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import styled, { css } from 'styled-components'
 import { transparentize } from 'polished'
+import { ButtonLink } from '@components/Button'
 
 const HeaderContainer = styled.header`
   width: 100%;
@@ -31,15 +32,20 @@ const Nav = styled.ul`
   margin: 0;
   padding: 0;
   align-items: center;
+  @media screen and (max-width: ${({ theme }) => theme.breakpoints[3]}) {
+    display: none;
+  }
 `
 
 const LinkStyle = css`
   padding: ${({ theme}) => theme.space[2]};
   text-decoration: none;
-  color: inherit;
   position: relative;
   display: inline-block;
   transition: all 120ms ease-out 0s;
+  &:hover, &:focus {
+    box-shadow: 0px 2px 0px 0px var(--primary);
+  }
 `
 
 const NavItem = styled.li`
@@ -48,6 +54,22 @@ const NavItem = styled.li`
   }
   &:not(:last-of-type) {
     margin-right: ${({ theme}) => theme.space[2]};
+  }
+`
+
+const MobileToggle = styled.button`
+  background: var(--baseDark);
+  color: var(--white);
+  display: none;
+  width: ${({ theme }) => theme.space[6]};
+  height: ${({ theme }) => theme.space[6]};
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  cursor: pointer;
+  @media screen and (max-width: ${({ theme }) => theme.breakpoints[3]}) {
+    display: inline-flex;
   }
 `
 
@@ -101,13 +123,16 @@ export default function Header() {
             </Link>
           </div>
           <div>
+            <MobileToggle>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+            </MobileToggle>
             <Nav role="navigation">
               {
                 navItems.map(navItem => {
                   if(navItem.type === 'local') {
                     return (
                       <NavItem key={navItem.name}>
-                        <NavLink href={navItem.href}>
+                        <NavLink className={'navLink'} href={navItem.href}>
                           <a>
                             {navItem.name}
                           </a>
@@ -126,9 +151,14 @@ export default function Header() {
                 })
               }
               <NavItem>
-                <a href="https://google.com">
-                  Sign Up for the Beta
-                </a>
+                <ButtonLink href="/launch-and-grow"
+                  bg={'var(--primary)'}
+                  color={'var(--white)'}
+                >
+                  <a className="c-button">
+                    Sign up for the Beta
+                  </a>
+                </ButtonLink>
               </NavItem>
             </Nav>
           </div>
