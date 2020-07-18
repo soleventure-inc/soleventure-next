@@ -4,7 +4,9 @@ export const GlobalStyle = createGlobalStyle`
   :root {
     --baseDark: ${({ theme }) => theme.colors.baseDark};
     --baseMedium: ${({ theme }) => theme.colors.baseMedium};
+    --baseAlt: ${({ theme }) => theme.colors.baseAlt};
     --baseLight: ${({ theme }) => theme.colors.baseLight};
+    --baseLightest: ${({ theme }) => theme.colors.baseLightest};
     --white: ${({ theme }) => theme.colors.white};
     --primary: ${({ theme }) => theme.colors.primary};
     --primaryDark: ${({ theme }) => theme.colors.primaryDark};
@@ -47,6 +49,12 @@ export const GlobalStyle = createGlobalStyle`
 
   button {
     cursor: pointer;
+  }
+
+  hr {
+    height: 1px;
+    background: var(--baseLight);
+    border: 0;
   }
 
   .img-full {
@@ -554,6 +562,19 @@ export const GlobalStyle = createGlobalStyle`
 
 .grid__col--am {
     vertical-align: middle
+}
+
+.u-animate--float {  
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes floating {
+  from { transform: translate(0,  0px); }
+  65%  { transform: translate(0, 16px); }
+  to   { transform: translate(0, -0px); }    
 }
 
 `

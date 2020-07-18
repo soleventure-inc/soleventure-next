@@ -2,6 +2,7 @@ import Link from 'next/link'
 import styled, { css } from 'styled-components'
 import { transparentize } from 'polished'
 import { ButtonLink } from '@components/Button'
+import React, {useState} from 'react'
 
 const HeaderContainer = styled.header`
   width: 100%;
@@ -81,7 +82,25 @@ const ExternalNavLink = styled.a`
  ${LinkStyle}
 `
 
+const MobileNav = styled.div`
+  position: fixed;
+  top: ${({ theme }) => theme.space[7]};
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: var(--primaryDark);
+  z-index: 99;
+  padding: ${({ theme }) => theme.space[8]} ${({ theme }) => theme.space[4]} ${({ theme }) => theme.space[5]};
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+`
+
 export default function Header() {
+
+  const [open, setOpen] = useState(false)
 
   const navItems = [
     {
@@ -119,8 +138,19 @@ export default function Header() {
             </Link>
           </div>
           <div>
-            <MobileToggle>
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+            <MobileToggle onClick={() => setOpen(open => !open)}>
+              {
+                open ?
+                (
+                  <svg xmlns='http://www.w3.org/2000/svg' width="32" height="32" viewBox='0 0 512 512'>
+                    <line x1='368' y1='368' x2='144' y2='144' fill="none" stroke="currentColor" strokeLineCap="round" strokeLinejoin="round" strokeWidth="36px"/><line x1='368' y1='144' x2='144' y2='368' fill="none" stroke="currentColor" strokeLineCap="round" strokeLinejoin="round" strokeWidth="36px"/>
+                  </svg>
+                    )
+                :
+                (
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+                )
+              }
             </MobileToggle>
             <Nav role="navigation">
               {
@@ -160,6 +190,54 @@ export default function Header() {
           </div>
         </HeaderBody>
       </HeaderContainer>
+      {
+        open ?
+        (
+          <MobileNav>
+            <div
+              style={{
+                textAlign: 'center'
+              }}
+            >
+              {
+                navItems.map(navItem => {
+                  if(navItem.type === 'local') {
+                    return (
+                      <h3>
+                        <Link href={navItem.href}>
+                          <a>
+                            {navItem.name}
+                          </a>
+                        </Link>
+                      </h3>
+                    )
+                  } else {
+                    return (
+                      <h3>
+                        <a href={navItem.href}>
+                          {navItem.name}
+                        </a>
+                      </h3>
+                    )
+                  }
+                })
+              }
+            </div>
+            <ButtonLink href="/launch-and-grow"
+              bg={'var(--primary)'}
+              color={'var(--white)'}
+              size='lg'
+              display='block'
+            >
+              <a className="c-button">
+                Sign Up
+              </a>
+            </ButtonLink>
+          </MobileNav>
+        )
+        :
+        null
+      }
     </>
   )
 }

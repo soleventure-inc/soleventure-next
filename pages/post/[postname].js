@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import matter from 'gray-matter'
 import ReactMarkdown from 'react-markdown'
+import { Container, Grid } from '@components/Grid'
 
 import Layout from '@components/Layout'
 import getSlugs from '@utils/getSlugs'
@@ -11,46 +12,26 @@ export default function BlogPost({ siteTitle, frontmatter, markdownBody }) {
   return (
     <>
       <Layout pageTitle={`${siteTitle} | ${frontmatter.title}`}>
-        <div className="back">
-          ←{' '}
-          <Link href="/">
-            <a>Back to post list</a>
-          </Link>
-        </div>
         <article>
-          <h1>{frontmatter.title}</h1>
-          {frontmatter.hero_image && (
-            <img
-              src={frontmatter.hero_image}
-              className="hero"
-              alt={frontmatter.title}
-            />
-          )}
-          <div>
-            <ReactMarkdown source={markdownBody} />
-          </div>
+          <Container>
+            <Grid>
+              <div className="grid__col grid__col--2-of-3 grid__col--centered">
+                <h1>{frontmatter.title}</h1>
+                {frontmatter.hero_image && (
+                  <img
+                    src={frontmatter.hero_image}
+                    className="hero"
+                    alt={frontmatter.title}
+                  />
+                )}
+                <div>
+                  <ReactMarkdown source={markdownBody} />
+                </div>
+              </div>
+            </Grid>
+          </Container>
         </article>
       </Layout>
-      <style jsx>{`
-        article {
-          width: 100%;
-          max-width: 1200px;
-        }
-        h1 {
-          font-size: 3rem;
-        }
-        h3 {
-          font-size: 2rem;
-        }
-        .hero {
-          width: 100%;
-        }
-        .back {
-          width: 100%;
-          max-width: 1200px;
-          color: #00a395;
-        }
-      `}</style>
     </>
   )
 }
