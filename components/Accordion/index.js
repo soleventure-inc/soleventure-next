@@ -23,6 +23,9 @@ const AccordionTitle = styled.button`
   &:hover, &:focus {
     background: var(--baseAlt);
   }
+  &:focus, &:active {
+    outline: none;
+  }
 `
 
 const AccordionBody = styled.div`
@@ -51,14 +54,15 @@ export default function Accordion({title, content}) {
             toggle ?
             (
               <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'>
-                <line x1='368' y1='368' x2='144' y2='144' fill="none" stroke="currentColor" strokeLineCap="round" strokeLinejoin="round" strokeWidth="32px"/><line x1='368' y1='144' x2='144' y2='368' fill="none" stroke="currentColor" strokeLineCap="round" strokeLinejoin="round" strokeWidth="32px"/>
+                <line x1='368' y1='368' x2='144' y2='144' fill="none" stroke="currentColor" strokeLinejoin="round" strokeWidth="32px"/>
+                <line x1='368' y1='144' x2='144' y2='368' fill="none" stroke="currentColor" strokeLinejoin="round" strokeWidth="32px"/>
               </svg>
             )
             :
             (
               <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'>
-                <line x1='256' y1='112' x2='256' y2='400' fill="none" stroke="currentColor" strokeLineCap="round" strokeLinejoin="round" strokeWidth="32px"/>
-                <line x1='400' y1='256' x2='112' y2='256' fill="none" stroke="currentColor" strokeLineCap="round" strokeLinejoin="round" strokeWidth="32px"/>
+                <line x1='256' y1='112' x2='256' y2='400' fill="none" stroke="currentColor" strokeLinejoin="round" strokeWidth="32px"/>
+                <line x1='400' y1='256' x2='112' y2='256' fill="none" stroke="currentColor" strokeLinejoin="round" strokeWidth="32px"/>
               </svg>
             )
           }

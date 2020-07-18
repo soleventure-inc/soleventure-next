@@ -34,9 +34,12 @@ const HeroImg = styled.img`
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  max-height: 550px;
-  width: auto;
+  width: 100%;
   display: block;
+  @media screen and (min-width: ${({ theme }) => theme.breakpoints[6]}) {
+    max-height: 550px;
+    width: auto;
+  }
 `
 
 const FullWidth = styled.div`
@@ -163,15 +166,14 @@ const Index = ({ title, description, ...props }) => {
                     Sign up
                   </a>
                 </ButtonLink>
-                <ButtonLink href="/launch-and-grow"
-                  bg={'rgba(255,255,255,.2)'}
+                <ButtonGhostLink href="/launch-and-grow"
                   color={'var(--white)'}
                   size="lg"
                 >
                   <a>
                     Learn More
                   </a>
-                </ButtonLink>
+                </ButtonGhostLink>
               </div>
               <div className="grid__col grid__col--1-of-2">
                 <HeroImgContainer>
@@ -191,14 +193,13 @@ const Index = ({ title, description, ...props }) => {
               </div>
               <div className="grid__col grid__col--2-of-3 grid__col--centered" style={{ textAlign: 'center' }}>
                 <p>There are now 57 million Americans in the freelance economy enjoying the freedom and flexibility of self-employment. The trade-off is that we are spending nearly <strong>half</strong>&nbsp;of our time on administrative tasks and generating new work. <strong>SoleVenture is here to help you manage your back-office so that you can grow your business.</strong></p>
-                <ButtonLink href="/launch-and-grow"
-                  bg={'var(--red)'}
-                  color={'var(--white)'}
+                <ButtonGhostLink href="/launch-and-grow"
+                  color={'var(--red)'}
                 >
                   <a>
                     Learn More
                   </a>
-                </ButtonLink>
+                </ButtonGhostLink>
               </div>
             </Grid>
             <Grid>

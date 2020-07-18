@@ -143,7 +143,7 @@ export default function Header() {
                 open ?
                 (
                   <svg xmlns='http://www.w3.org/2000/svg' width="32" height="32" viewBox='0 0 512 512'>
-                    <line x1='368' y1='368' x2='144' y2='144' fill="none" stroke="currentColor" strokeLineCap="round" strokeLinejoin="round" strokeWidth="36px"/><line x1='368' y1='144' x2='144' y2='368' fill="none" stroke="currentColor" strokeLineCap="round" strokeLinejoin="round" strokeWidth="36px"/>
+                    <line x1='368' y1='368' x2='144' y2='144' fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="36px"/><line x1='368' y1='144' x2='144' y2='368' fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="36px"/>
                   </svg>
                     )
                 :
@@ -177,14 +177,11 @@ export default function Header() {
                 })
               }
               <NavItem>
-                <ButtonLink href="/launch-and-grow"
-                  bg={'var(--primary)'}
-                  color={'var(--white)'}
-                >
-                  <a className="c-button">
+                <Link href="/launch-and-grow">
+                  <a>
                     Sign Up
                   </a>
-                </ButtonLink>
+                </Link>
               </NavItem>
             </Nav>
           </div>
@@ -203,7 +200,7 @@ export default function Header() {
                 navItems.map(navItem => {
                   if(navItem.type === 'local') {
                     return (
-                      <h3>
+                      <h3 key={navItem.name}>
                         <Link href={navItem.href}>
                           <a>
                             {navItem.name}
@@ -213,7 +210,7 @@ export default function Header() {
                     )
                   } else {
                     return (
-                      <h3>
+                      <h3 key={navItem.name}>
                         <a href={navItem.href}>
                           {navItem.name}
                         </a>
@@ -223,16 +220,11 @@ export default function Header() {
                 })
               }
             </div>
-            <ButtonLink href="/launch-and-grow"
-              bg={'var(--primary)'}
-              color={'var(--white)'}
-              size='lg'
-              display='block'
-            >
-              <a className="c-button">
+            <Link href="/launch-and-grow">
+              <a>
                 Sign Up
               </a>
-            </ButtonLink>
+            </Link>
           </MobileNav>
         )
         :
