@@ -10,14 +10,13 @@ export const Container = styled.div`
 `
 
 export const Grid = styled.div`
-  display: flex;
-  @media screen and (max-width: ${({ theme }) => theme.breakpoints[4]}) {
-    flex-wrap: wrap;
-  }
+  margin-left: -2.4rem;
+  list-style: none;
 `
 
 export const Col = styled.div`
   flex: ${( props ) => props.size ? props.size : 1};
+  position: relative;
   min-height: 1px;
   @media screen and (max-width: ${({ theme }) => theme.breakpoints[4]}) {
     flex: ${( props ) => props.md ? props.md : 'auto'};

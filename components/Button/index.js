@@ -4,7 +4,8 @@ import React from 'react'
 
 const ButtonBase = css`
   display: inline-block;
-  padding: ${({ theme }) => theme.space[2]} ${({ theme }) => theme.space[3]};
+  padding: ${props => props.size === 'lg' ? '16px 24px' : '8px 16px'};
+  font-size: ${props => props.size === 'lg' ? '21px' : 'inherit'};
   border: 0;
   border-radius: 999px;
   position: relative;

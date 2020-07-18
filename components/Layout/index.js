@@ -3,6 +3,7 @@ import styled, { ThemeProvider } from 'styled-components'
 import { Normalize } from 'styled-normalize'
 import { GlobalStyle } from '@components/GlobalStyles'
 import { theme } from '@components/Theme'
+import Footer from '@components/Footer'
 
 import Header from '../Header'
 
@@ -23,9 +24,7 @@ export default function Layout({ children, pageTitle, description, ...props }) {
           <Header />
           <div>{children}</div>
         </section>
-        <footer>
-          Built with <img src="/netliheart.svg" alt="Netlify Heart" /> for you
-        </footer>
+        <Footer/>
       </ThemeProvider>
     </>
   )
