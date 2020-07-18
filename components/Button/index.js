@@ -13,6 +13,8 @@ const ButtonBase = css`
   text-decoration: none;
   color: ${props => props.color ? props.color : 'var(--white)'};
   background: ${props => props.bg ? props.bg : 'var(--primary)'};
+  margin-left: ${props => props.marginLeft ? props.marginLeft : '0'};
+  margin-right: ${props => props.marginRight ? props.marginRight : '0'};
   cursor: pointer;
   transition: all 120ms ease-out 0s;
   &:hover {
@@ -35,8 +37,8 @@ export const ButtonLinkContainer = styled.a`
   ${ButtonBase}
 `
 
-export const ButtonLink = ({href,bg,color,children}) => (
+export const ButtonLink = ({href,bg,color,children, marginLeft, marginRight, size}) => (
   <Link href={href}>
-    <ButtonLinkContainer bg={bg} color={color}>{children}</ButtonLinkContainer>
+    <ButtonLinkContainer size={size} marginLeft={marginLeft} marginRight={marginRight} bg={bg} color={color}>{children}</ButtonLinkContainer>
   </Link>
 )

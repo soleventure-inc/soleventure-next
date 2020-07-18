@@ -520,4 +520,40 @@ export const GlobalStyle = createGlobalStyle`
         width: 75%
     }
   }
+  .grid__col--centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.grid__col--d-first {
+    float: left
+}
+
+.grid__col--d-last {
+    float: right
+}
+
+.grid--no-gutter {
+    margin-left: 0;
+    width: 100%
+}
+
+.grid--no-gutter .grid__col {
+    padding-left: 0
+}
+
+.grid--no-gutter .grid__col--span-all {
+    margin-left: 0;
+    width: 100%
+}
+
+.grid__col--ab {
+    vertical-align: bottom
+}
+
+.grid__col--am {
+    vertical-align: middle
+}
+
 `

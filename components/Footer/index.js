@@ -171,7 +171,7 @@ export default function Footer() {
                 color={'var(--white)'}
               >
                 <a className="c-button">
-                  Sign up for the Beta
+                  Sign Up
                 </a>
               </ButtonLink>
              </ButtonContainer>

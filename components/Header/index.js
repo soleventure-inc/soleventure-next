@@ -104,10 +104,6 @@ export default function Header() {
       type: 'external',
       name: 'Blog',
       href: 'https://blog.soleventure.com/blog'
-    },{
-      type: 'local',
-      name: 'About Us',
-      href: '/about-us'
     }
   ]
 
@@ -156,7 +152,7 @@ export default function Header() {
                   color={'var(--white)'}
                 >
                   <a className="c-button">
-                    Sign up for the Beta
+                    Sign Up
                   </a>
                 </ButtonLink>
               </NavItem>
