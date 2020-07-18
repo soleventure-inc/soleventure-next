@@ -43,6 +43,8 @@ export default function Layout({ children, pageTitle, description, ...props }) {
           <div>{children}</div>
         </section>
         <Footer/>
+        <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/6775904.js"></script>
+        <script charSet="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
       </ThemeProvider>
     </>
   )

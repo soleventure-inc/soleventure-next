@@ -166,9 +166,16 @@ export default function Footer() {
            </div>
            <div className="grid__col grid__col--1-of-3">
              <ButtonContainer>
-              <Link href="/launch-and-grow">
-                Sign Up
-              </Link>
+              <span style={{
+                background: 'var(--primary)',
+                color: 'var(--white)',
+                borderRadius: '999px',
+                padding: '8px 16px',
+              }}>
+                <Link href="/launch-and-grow">
+                  Sign Up
+                </Link>
+              </span>
              </ButtonContainer>
            </div>
            <div className="grid__col grid__col--1-of-2 grid__col--m-1-of-2">

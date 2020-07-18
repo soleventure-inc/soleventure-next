@@ -249,8 +249,8 @@ const AboutUs = ({ title, description, ...props }) => {
                 >
                   <div style={{textAlign: 'center'}}>
                     <h4>Join our team</h4>
-                    <p>If you’re passionate about reimagining consumer applications, we’d love to hear from you.</p>
-                    <ButtonLinkContainer href="mailto:support@soleventure.com">
+                    <p className="lead">If you’re passionate about reimagining consumer applications, we’d love to hear from you.</p>
+                    <ButtonLinkContainer size={'lg'} href="mailto:support@soleventure.com">
                       Contact Us
                     </ButtonLinkContainer>
                   </div>

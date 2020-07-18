@@ -571,6 +571,134 @@ export const GlobalStyle = createGlobalStyle`
   animation-timing-function: ease-in-out;
 }
 
+.hs-form-field {
+  margin-bottom: ${({ theme }) => theme.space[3]};
+}
+
+.hs-input[type="text"], .hs-input[type="tel"], .hs-input[type="email"], .hs-select, .hs-input {
+	display: block;
+	width: 100%;
+	padding: ${({ theme }) => theme.space[3]};
+	border-radius: ${({ theme }) => theme.space[1]};
+	background: var(--baseLightest);
+	border: 0;
+	border: 1px solid transparent;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	transition: all 180ms ease-out 0s;
+	&:focus, &:active {
+		border-color: var(--primary);
+	}
+}
+
+.hs-form-field label {
+	display: inline-block;
+  margin-bottom: ${({ theme }) => theme.space[2]};
+  color: var(--baseMedium);
+}
+
+.hs-form-field legend {
+	font-size: 14px;
+	color: var(--baseMedium);
+}
+
+.hs-form-field .actions {
+	text-align: center;
+}
+
+.hs-button.primary.large {
+	width: 100%;
+  display: block;
+  background: var(--primary);
+  border: 0;
+  font-family: inherit;
+  color: var(--white);
+  padding: 16px;
+  border-radius: 999px;
+  cursor: pointer;
+  font-size: 21px;
+}
+
+select.c-control__input, .hbspt-form select {
+	background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E');
+	background-repeat: no-repeat, repeat;
+	background-position: right .7em top 50%, 0 0;
+	background-size: .65em auto, 100%;
+	cursor: pointer;
+}
+
+.hs-error-msg {
+	color: var(--red);
+	font-size: 14px;
+}
+
+.hs-main-font-element {
+	font-size: 14px;
+}
+
+::placeholder {
+	color: inherit;
+	opacity: 0.5;
+}
+
+:-ms-input-placeholder {
+	color: inherit;
+	opacity: 0.5;
+}
+
+::-ms-input-placeholder {
+	color: inherit;
+	opacity: 0.5;
+}
+
+.c-checkbox {
+	display: inline-flex;
+	align-items: center;
+	user-select: none;
+	margin-bottom: ${({ theme }) => theme.space[3]};
+	&__input {
+		margin-right: ${({ theme }) => theme.space[2]};
+	}
+}
+
+.inputs-list.multi-container {
+	padding: 0;
+	margin: ${({ theme }) => theme.space[3]} 0;
+	list-style-type: none;
+}
+
+.hs-form-radio, .hs-form-checkbox {
+	label {
+		position: relative;
+		input {
+			position: absolute;
+			left: 0;
+			width: 1px;
+			height: 1px;
+			opacity:0;
+		}
+		span {
+			display: inline-flex;
+			padding: 8px 16px;
+			background: var(--baseLightest);
+			border: 1px solid var(--baseLighter);
+			border-radius: 999px;
+			cursor: pointer;
+			font-size: 14px;
+		}
+		input:checked + span {
+			background: var(--baseMedium);
+			border-color: var(--baseMedium);
+			color: var(--white);
+			&:before {
+				content: '✓';
+				padding-right: 8px;
+			}
+		}
+	}
+}
+
 @keyframes floating {
   from { transform: translate(0,  0px); }
   65%  { transform: translate(0, 16px); }

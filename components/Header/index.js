@@ -177,11 +177,18 @@ export default function Header() {
                 })
               }
               <NavItem>
-                <Link href="/launch-and-grow">
-                  <a>
-                    Sign Up
-                  </a>
-                </Link>
+                <span style={{
+                  background: 'var(--primary)',
+                  color: 'var(--white)',
+                  borderRadius: '999px',
+                  padding: '8px',
+                }}>
+                  <Link href="/launch-and-grow">
+                    <a>
+                      Sign Up
+                    </a>
+                  </Link>
+                </span>
               </NavItem>
             </Nav>
           </div>

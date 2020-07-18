@@ -14,6 +14,14 @@ export const Grid = styled.div`
   list-style: none;
 `
 
+export const SectionContainer = styled.div`
+  padding-top: 88px;
+  padding-bottom: ${({ theme }) => theme.space[5]};
+  text-align: ${props => props.center ? 'center' : 'initial'};
+  background: ${props => props.bg ? props.bg : 'transparent'};
+  color: ${props => props.color ? props.color : 'inherit'};
+`
+
 export const Col = styled.div`
   flex: ${( props ) => props.size ? props.size : 1};
   position: relative;
