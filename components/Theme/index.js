@@ -59,7 +59,9 @@ export const theme = {
   colors: {
     baseDark: '#0F1726',
     baseMedium: '#5C6B7E',
+    baseAlt: '#eceef0',
     baseLight: '#dee1e5',
+    baseLightest: '#f2f3f5',
     white: '#FFFFFF',
     primary: '#6c5ce7',
     primaryDark: '#261a54',
