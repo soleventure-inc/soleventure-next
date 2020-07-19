@@ -98,6 +98,20 @@ const MobileNav = styled.div`
   justify-content: space-between;
 `
 
+const BlockButton = styled.div`
+  width: 100%;
+  text-align: center;
+  a {
+    background: var(--primary);
+    color: var(--white);
+    border-radius: 999px;
+    font-size: 21px;
+    display: block;
+    width: 100%;
+    padding: 16px;
+  }
+`
+
 export default function Header() {
 
   const [open, setOpen] = useState(false)
@@ -227,11 +241,11 @@ export default function Header() {
                 })
               }
             </div>
-            <Link href="/launch-and-grow">
-              <a>
-                Sign Up
-              </a>
-            </Link>
+              <BlockButton>
+                <Link href="/launch-and-grow">
+                  <a>Sign Up</a>
+                </Link>
+              </BlockButton>
           </MobileNav>
         )
         :

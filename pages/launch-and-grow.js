@@ -41,7 +41,7 @@ const LaunchAndGrow = ({ title, description, ...props }) => {
                 />
               </div>
               <div className="grid__col grid__col--12-of-12">
-                <div style={{textAlign: 'center'}}>
+                <div className="u-animate--float" style={{textAlign: 'center'}}>
                   <ButtonGhost color={'var(--red)'}>
                   Fill out the form below &darr;
                   </ButtonGhost>

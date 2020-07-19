@@ -699,6 +699,30 @@ select.c-control__input, .hbspt-form select {
 	}
 }
 
+progress {
+	-webkit-appearance: none;
+	 appearance: none;
+}
+
+progress[value]::-webkit-progress-bar {
+  background-color: #eee;
+  border-radius: 999px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+
+progress[value]::-webkit-progress-value {
+  background: var(--primary);
+  border-top-left-radius: 999px;
+  border-bottom-left-radius: 999px;
+  border-top-right-radius: 999px;
+  border-bottom-right-radius: 999px;
+  position: relative;
+}
+
+progress.active[value]::-webkit-progress-value {
+  background: var(--teal);
+}
+
 @keyframes floating {
   from { transform: translate(0,  0px); }
   65%  { transform: translate(0, 16px); }

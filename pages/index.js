@@ -218,6 +218,7 @@ const Index = ({ title, description, ...props }) => {
             </Grid>
           </Container>
         </FullWidth>
+        <hr/>
         <FullWidth>
           <Container>
             <Grid>
@@ -248,6 +249,7 @@ const Index = ({ title, description, ...props }) => {
             </Grid>
           </Container>
         </FullWidth>
+        <hr/>
         <FullWidth>
           <Container>
             <Grid>
@@ -274,6 +276,7 @@ const Index = ({ title, description, ...props }) => {
             </Grid>
           </Container>
         </FullWidth>
+        <hr/>
         <FullWidth>
           <Container>
             <Grid>
