@@ -58,7 +58,7 @@ const HowItWorks = ({ title, description, ...props }) => {
                   </p>
                 </div>
                 <div className="grid__col grid__col--12-of-12">
-                  <h4>How it Works</h4>
+                  <h4 style={{textAlign: 'center'}}>How it Works</h4>
                 </div>
               </div>
             </Grid>
@@ -238,36 +238,40 @@ const HowItWorks = ({ title, description, ...props }) => {
           <FullWidth bg={'var(--primary)'} color={'var(--white)'}>
             <Container>
               <Grid>
-                <div className="grid__col grid__col--1-of-2">
-                  <BadgeGhost
-                    color={'var(--beige)'}
-                  >
-                    Step #1
-                  </BadgeGhost>
-                  <h3>Build Your Plan</h3>
-                  <p className="lead">You spend time building your business, we help with formation and ensure you are compliant.</p>
-                  <Link href="/launch-and-grow">
-                    <a>
-                      <Button
-                        size={'lg'}
-                        bg={'var(--white)'}
-                        color={'var(--primary)'}
+                <div className="grid__col grid__col--2-of-3 grid__col--centered">
+                  <Grid>
+                    <div className="grid__col grid__col--1-of-2">
+                      <BadgeGhost
+                        color={'var(--beige)'}
                       >
-                        Get Started
-                      </Button>
-                    </a>
-                  </Link>
-                </div>
-                <div className="grid__col grid__col--1-of-4"></div>
-                <div className="grid__col grid__col--1-of-4">
-                  <img
-                    src="static/images/screen-step-1.png"
-                    style={{
-                      display: 'block',
-                      width:"100%",
-                      paddingTop: '32px'
-                    }}
-                  />
+                        Step #1
+                      </BadgeGhost>
+                      <h3>Build Your Plan</h3>
+                      <p className="lead">You spend time building your business, we help with formation and ensure you are compliant.</p>
+                      <Link href="/launch-and-grow">
+                        <a>
+                          <Button
+                            size={'lg'}
+                            bg={'var(--white)'}
+                            color={'var(--primary)'}
+                          >
+                            Get Started
+                          </Button>
+                        </a>
+                      </Link>
+                    </div>
+                    <div className="grid__col grid__col--1-of-8"></div>
+                    <div className="grid__col grid__col--3-of-8">
+                      <img
+                        src="static/images/screen-step-1.png"
+                        style={{
+                          display: 'block',
+                          width:"100%",
+                          paddingTop: '32px'
+                        }}
+                      />
+                    </div>
+                  </Grid>
                 </div>
               </Grid>
             </Container>
@@ -275,36 +279,40 @@ const HowItWorks = ({ title, description, ...props }) => {
           <FullWidth bg={'var(--primaryDark)'} color={'var(--white)'}>
             <Container>
               <Grid>
-                <div className="grid__col grid__col--1-of-4">
-                  <img
-                    src="static/images/screen-step-2.png"
-                    style={{
-                      display: 'block',
-                      width:"100%",
-                      paddingTop: '32px'
-                    }}
-                  />
-                </div>
-                <div className="grid__col grid__col--1-of-4"></div>
-                <div className="grid__col grid__col--1-of-2">
-                  <BadgeGhost
-                    color={'var(--teal)'}
-                  >
-                    Step #2
-                  </BadgeGhost>
-                  <h3>Get Paid</h3>
-                  <p className="lead">We streamline your cashflow with tools like Smart Invoicing, so you can focus on growing your business.</p>
-                  <Link href="/launch-and-grow">
-                    <a>
-                      <Button
-                        size={'lg'}
-                        bg={'var(--orange)'}
-                        color={'var(--white)'}
+                <div className="grid__col grid__col--2-of-3 grid__col--centered">
+                  <Grid>
+                    <div className="grid__col grid__col--3-of-8">
+                      <img
+                        src="static/images/screen-step-2.png"
+                        style={{
+                          display: 'block',
+                          width:"100%",
+                          paddingTop: '32px'
+                        }}
+                      />
+                    </div>
+                    <div className="grid__col grid__col--1-of-8"></div>
+                    <div className="grid__col grid__col--1-of-2">
+                      <BadgeGhost
+                        color={'var(--teal)'}
                       >
-                        Get Started
-                      </Button>
-                    </a>
-                  </Link>
+                        Step #2
+                      </BadgeGhost>
+                      <h3>Get Paid</h3>
+                      <p className="lead">We streamline your cashflow with tools like Smart Invoicing, so you can focus on growing your business.</p>
+                      <Link href="/launch-and-grow">
+                        <a>
+                          <Button
+                            size={'lg'}
+                            bg={'var(--orange)'}
+                            color={'var(--white)'}
+                          >
+                            Get Started
+                          </Button>
+                        </a>
+                      </Link>
+                    </div>
+                  </Grid>
                 </div>
               </Grid>
             </Container>
@@ -312,37 +320,41 @@ const HowItWorks = ({ title, description, ...props }) => {
           <FullWidth bg={'var(--teal)'} color={'var(--baseDark)'}>
             <Container>
               <Grid>
-                <div className="grid__col grid__col--1-of-2">
-                  <BadgeGhost
-                    color={'var(--baseDark)'}
-                  >
-                    Step #3
-                  </BadgeGhost>
-                  <h3>Automate your Paycheck</h3>
-                  <p className="lead">Link your accounts, automate your tax savings, and plan for vacations and time off.</p>
-                  <p className="lead">No more surprise tax bills at the end of year. Start enjoying the freedom of self-employment with money for those planned and unplanned days off.</p>
-                  <Link href="/launch-and-grow">
-                    <a>
-                      <Button
-                        size={'lg'}
-                        bg={'var(--primaryDark)'}
-                        color={'var(--white)'}
+                <div className="grid__col grid__col--2-of-3 grid__col--centered">
+                  <Grid>
+                    <div className="grid__col grid__col--1-of-2">
+                      <BadgeGhost
+                        color={'var(--baseDark)'}
                       >
-                        Get Started
-                      </Button>
-                    </a>
-                  </Link>
-                </div>
-                <div className="grid__col grid__col--1-of-4"></div>
-                <div className="grid__col grid__col--1-of-4">
-                  <img
-                    src="static/images/screen-step-3.png"
-                    style={{
-                      display: 'block',
-                      width:"100%",
-                      paddingTop: '32px'
-                    }}
-                  />
+                        Step #3
+                      </BadgeGhost>
+                      <h3>Automate your Paycheck</h3>
+                      <p className="lead">Link your accounts, automate your tax savings, and plan for vacations and time off.</p>
+                      <p className="lead">No more surprise tax bills at the end of year. Start enjoying the freedom of self-employment with money for those planned and unplanned days off.</p>
+                      <Link href="/launch-and-grow">
+                        <a>
+                          <Button
+                            size={'lg'}
+                            bg={'var(--primaryDark)'}
+                            color={'var(--white)'}
+                          >
+                            Get Started
+                          </Button>
+                        </a>
+                      </Link>
+                    </div>
+                    <div className="grid__col grid__col--1-of-8"></div>
+                    <div className="grid__col grid__col--3-of-8">
+                      <img
+                        src="static/images/screen-step-3.png"
+                        style={{
+                          display: 'block',
+                          width:"100%",
+                          paddingTop: '32px'
+                        }}
+                      />
+                    </div>
+                  </Grid>
                 </div>
               </Grid>
             </Container>
@@ -350,37 +362,41 @@ const HowItWorks = ({ title, description, ...props }) => {
           <FullWidth bg={'var(--baseDark)'} color={'var(--white)'}>
             <Container>
               <Grid>
-                <div className="grid__col grid__col--1-of-4">
-                  <img
-                    src="static/images/screen-step-4.png"
-                    style={{
-                      display: 'block',
-                      width:"100%",
-                      paddingTop: '32px'
-                    }}
-                  />
-                </div>
-                <div className="grid__col grid__col--1-of-4"></div>
-                <div className="grid__col grid__col--1-of-2">
-                  <BadgeGhost
-                    color={'var(--orange)'}
-                  >
-                    Step #4
-                  </BadgeGhost>
-                  <h3>Reap the Benefits</h3>
-                  <p className="lead">Access a network of major medical, dental, vision, and life insurance plans on and off the ACA marketplace.</p>
-                  <p className="lead">We're like your virtual HR Department. We’ll connect you with affordable benefits for you and your family.</p>
-                  <Link href="/launch-and-grow">
-                    <a>
-                      <Button
-                        size={'lg'}
-                        bg={'var(--primary)'}
-                        color={'var(--white)'}
+                <div className="grid__col grid__col--2-of-3 grid__col--centered">
+                  <Grid>
+                    <div className="grid__col grid__col--3-of-8">
+                      <img
+                        src="static/images/screen-step-4.png"
+                        style={{
+                          display: 'block',
+                          width:"100%",
+                          paddingTop: '32px'
+                        }}
+                      />
+                    </div>
+                    <div className="grid__col grid__col--1-of-8"></div>
+                    <div className="grid__col grid__col--1-of-2">
+                      <BadgeGhost
+                        color={'var(--orange)'}
                       >
-                        Get Started
-                      </Button>
-                    </a>
-                  </Link>
+                        Step #4
+                      </BadgeGhost>
+                      <h3>Reap the Benefits</h3>
+                      <p className="lead">Access a network of major medical, dental, vision, and life insurance plans on and off the ACA marketplace.</p>
+                      <p className="lead">We're like your virtual HR Department. We’ll connect you with affordable benefits for you and your family.</p>
+                      <Link href="/launch-and-grow">
+                        <a>
+                          <Button
+                            size={'lg'}
+                            bg={'var(--primary)'}
+                            color={'var(--white)'}
+                          >
+                            Get Started
+                          </Button>
+                        </a>
+                      </Link>
+                    </div>
+                  </Grid>
                 </div>
               </Grid>
             </Container>
