@@ -14,6 +14,8 @@ const ButtonBase = css`
   text-decoration: none;
   color: ${props => props.color ? props.color : 'var(--white)'};
   background: ${props => props.bg ? props.bg : 'var(--primary)'};
+  margin-top: ${props => props.marginTop ? props.marginTop : '0'};
+  margin-bottom: ${props => props.marginBottom ? props.marginBottom : '0'};
   margin-left: ${props => props.marginLeft ? props.marginLeft : '0'};
   margin-right: ${props => props.marginRight ? props.marginRight : '0'};
   cursor: pointer;
