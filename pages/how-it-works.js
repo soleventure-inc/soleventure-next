@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import Link from 'next/link'
 import { Button } from '@components/Button'
 import { BadgeGhost } from '@components/Badge'
+import CTA from '@components/CTA'
 
 const FullWidth = styled.div`
   padding-top: 88px;
@@ -385,6 +386,15 @@ const HowItWorks = ({ title, description, ...props }) => {
             </Container>
           </FullWidth>
         </LargeView>
+        <FullWidth>
+          <Container>
+            <Grid>
+              <div className="grid__col grid__col--2-of-3 grid__col--centered">
+                <CTA/>
+              </div>
+            </Grid>
+          </Container>
+        </FullWidth>
       </Layout>
     </>
   )

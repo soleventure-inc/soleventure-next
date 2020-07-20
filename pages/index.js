@@ -1,8 +1,11 @@
 import Layout from '@components/Layout'
 import { Section, Container, Grid, Col } from '@components/Grid'
 import styled from 'styled-components'
-import { ButtonLink, ButtonGhostLink } from '@components/Button'
+import { Button, ButtonLink, ButtonGhostLink } from '@components/Button'
 import Accordion from '@components/Accordion'
+import { Box } from '@components/Box'
+import Link from 'next/link'
+import CTA from '@components/CTA'
 
 const Hero = styled(Section)`
   height: 655px;
@@ -336,14 +339,19 @@ const Index = ({ title, description, ...props }) => {
           <Container>
             <Grid>
               <div className="grid__col grid__col--12-of-12">
-                <h5 style={{ textAlign: 'center' }}>FAQs</h5>
+                <h5>FAQs</h5>
               </div>
-              <div className="grid__col grid__col--1-of-2 grid__col--centered">
-                {
-                  faqs.map(faq => (
-                    <Accordion title={faq.title} content={faq.answer} key={faq.title}/>
-                  ))
-                }
+              <div className="grid__col grid__col--1-of-2">
+                <div style={{ marginBottom: '24px'}}>
+                  {
+                    faqs.map(faq => (
+                      <Accordion title={faq.title} content={faq.answer} key={faq.title}/>
+                    ))
+                  }
+                </div>
+              </div>
+              <div className="grid__col grid__col--1-of-2">
+                <CTA/>
               </div>
             </Grid>
           </Container>

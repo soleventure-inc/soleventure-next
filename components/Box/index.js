@@ -12,4 +12,5 @@ export const Box = styled.div`
   border-radius: ${({ theme }) => theme.space[4]};
   background: ${props => props.bg ? props.bg : 'var(--primary)'};
   color: ${props => props.color ? props.color : 'var(--white)'};
+  text-align: ${props => props.center ? 'center' : 'inherit'};
 `
