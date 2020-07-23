@@ -159,9 +159,8 @@ const HowItWorks = ({ title, description, ...props }) => {
                   >
                     Step #3
                   </BadgeGhost>
-                  <h3>Automate your Paycheck</h3>
-                  <p className="lead">Link your accounts, automate your tax savings, and plan for vacations and time off.</p>
-                  <p className="lead">No more surprise tax bills at the end of year. Start enjoying the freedom of self-employment with money for those planned and unplanned days off.</p>
+                  <h3>Manage Taxes and Cash Flow</h3>
+                  <p className="lead">SoleVenture helps you save on taxes and manage cashflow. By monitoring and categorizing activity in your linked accounts, we help you track income and expenses and estimate your quarterly taxes in real-time.</p>
                   <Link href="/launch-and-grow">
                     <a>
                       <Button
@@ -328,9 +327,8 @@ const HowItWorks = ({ title, description, ...props }) => {
                       >
                         Step #3
                       </BadgeGhost>
-                      <h3>Automate your Paycheck</h3>
-                      <p className="lead">Link your accounts, automate your tax savings, and plan for vacations and time off.</p>
-                      <p className="lead">No more surprise tax bills at the end of year. Start enjoying the freedom of self-employment with money for those planned and unplanned days off.</p>
+                      <h3>Manage Taxes and Cash Flow</h3>
+                      <p className="lead">SoleVenture helps you save on taxes and manage cashflow. By monitoring and categorizing activity in your linked accounts, we help you track income and expenses and estimate your quarterly taxes in real-time.</p>
                       <Link href="/launch-and-grow">
                         <a>
                           <Button
