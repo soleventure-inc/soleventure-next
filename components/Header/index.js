@@ -121,15 +121,7 @@ export default function Header() {
       type: 'local',
       name: 'How it Works',
       href: '/how-it-works'
-    },{
-      type: 'local',
-      name: 'Find Work',
-      href: '/find-work'
-    },{
-      type: 'local',
-      name: 'Hire Freelancers',
-      href: '/hire-freelancers'
-    },{
+    }, {
       type: 'external',
       name: 'Insurance',
       href: 'https://marketing.soleventure.com/insurance-partner'

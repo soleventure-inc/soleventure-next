@@ -18,6 +18,17 @@ const TextItem = styled.div`
 `
 
 const HireFreelancers = ({ title, description, ...props }) => {
+  const loadForm = () => {
+    var form = document.querySelectorAll('form')
+    function submit() {
+      var email = form[0].querySelector('input[name="email"]').value;
+      var firstname = form[0].querySelector('input[name="firstname"]').value;
+      var lastname = form[0].querySelector('input[name="lastname"]').value;
+      // window.location.replace(`https://www.soleventure.com/hire-freelancers-2.html?firstname=${firstname}&lastname=${lastname}&email=${email}`);
+      window.location.replace(`https://google.com`);
+    }
+    form[0].onsubmit = submit;
+  }
   return (
     <>
       <Layout pageTitle={`${title} | Find Work`} description={description}>
@@ -67,7 +78,7 @@ const HireFreelancers = ({ title, description, ...props }) => {
               portalId='6775904'
               formId='cce51d26-0631-4ee3-adb0-1139e2aec71c'
               onSubmit={() => (console.log('Submit!'))}
-              onReady={(form) => console.log('Form ready!')}
+              onReady={(form) => loadForm()}
               loading={<div>Loading...</div>}
             />
           </div>
