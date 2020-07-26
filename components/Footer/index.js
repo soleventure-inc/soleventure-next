@@ -66,14 +66,6 @@ export default function Footer() {
   const primaryNav = [
     {
       type: 'local',
-      name: 'About Us',
-      link: '/about-us'
-    }, {
-      type: 'out',
-      name: 'Blog',
-      link: 'https://blog.soleventure.com/blog'
-    }, {
-      type: 'local',
       name: 'Terms',
       link: '/terms'
     }, {
@@ -97,17 +89,17 @@ export default function Footer() {
       name: 'How it Works',
       link: '/how-it-works'
     }, {
-      type: 'local',
-      name: 'Find Work',
-      link: '/find-work'
-    }, {
-      type: 'local',
-      name: 'Hire Freelancers',
-      link: '/hire-freelancers'
-    }, {
       type: 'out',
       name: 'Insurance',
       link: 'https://marketing.soleventure.com/insurance-partner'
+    }, {
+      type: 'out',
+      name: 'Blog',
+      link: 'https://blog.soleventure.com/blog'
+    }, {
+      type: 'local',
+      name: 'About Us',
+      link: '/about-us'
     }
   ]
 
