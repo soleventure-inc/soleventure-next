@@ -1,6 +1,6 @@
 import Layout from '@components/Layout'
 import { SectionContainer, Container, Grid } from '@components/Grid'
-import Link from 'next/link'
+import { ButtonLink } from '@components/Button'
 
 const Error404 = ({ title, description, ...props }) => {
 
@@ -25,11 +25,13 @@ const Error404 = ({ title, description, ...props }) => {
                   <p className="lead">
                   Daisy searched high and low but couldn’t find what you’re looking for. Let’s find a better place for you to go.
                   </p>
-                  <Link href='/'>
+                  <ButtonLink href="/"
+                  bg={'var(--primary)'}
+                  >
                     <a>
                       Back Home
                     </a>
-                  </Link>
+                  </ButtonLink>
                 </div>
               </div>
             </Grid>
