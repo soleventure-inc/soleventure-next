@@ -233,7 +233,7 @@ const StyleGuide = ({ title, description, ...props }) => {
                 <p>The large serif headers help convey a sense of stability to users, while the swiss-inspired geometric sans in the body help make the interface feel modern, yet usable.</p>
                 <Grid>
                   <div className="grid__col grid__col--1-of-2">
-                    <h5>Titles - <span style={{ color: 'var(--primary)' }}>Big Caslon</span></h5>
+                    <h5>Titles - <span style={{ color: 'var(--primary)' }}>Ibarra Real Nova</span></h5>
                     <h1>Header 1</h1>
                     <h2>Header 2</h2>
                     <h3>Header 3</h3>

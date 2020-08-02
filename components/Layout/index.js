@@ -37,6 +37,7 @@ export default function Layout({ children, pageTitle, description, ...props }) {
           <meta property="twitter:title" content={pageTitle}></meta>
           <meta property="twitter:description" content={description}></meta>
           <meta property="twitter:image" content="/static/images/meta/sm.png"></meta>
+          <link href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@400;700&display=swap" rel="stylesheet"></link>
         </Head>
         <section>
           <Header />
