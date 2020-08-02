@@ -99,6 +99,7 @@ export const GlobalStyle = createGlobalStyle`
     margin-top: ${({ theme }) => theme.space[4]};
     word-wrap: break-word;
     font-family: ${({ theme }) => theme.fonts.heading};
+    letter-spacing: -0.02em;
   }
   
   h1,h2,h3 {

@@ -1,7 +1,7 @@
 export const theme = {
   fonts: {
     body: 'proxima-nova, system-ui, sans-serif',
-    heading: 'big-caslon-fb, serif'
+    heading: '"Ibarra Real Nova", big-caslon-fb, serif'
   },
   layoutWidth: '1200px',
   breakpoints: [
