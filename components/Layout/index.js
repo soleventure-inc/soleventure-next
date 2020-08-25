@@ -4,10 +4,17 @@ import { Normalize } from 'styled-normalize'
 import { GlobalStyle } from '@components/GlobalStyles'
 import { theme } from '@components/Theme'
 import Footer from '@components/Footer'
+import ReactGA from 'react-ga'
 
 import Header from '../Header'
 
 export default function Layout({ children, pageTitle, description, ...props }) {
+  
+  if (typeof window !== "undefined") {
+    ReactGA.initialize('UA-151124933-1')
+    ReactGA.pageview(window.location.pathname + window.location.search)
+  }
+  
   return (
     <>
       <ThemeProvider theme={theme}>
