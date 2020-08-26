@@ -54,11 +54,9 @@ export default function Layout({ children, pageTitle, description, ...props }) {
         <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/6775904.js"></script>
         <script charSet="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
         <script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-151124933-1"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'UA-151124933-1');
+        <script
+          dangerouslySetInnerHTML={{ __html:`window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date());gtag('config', 'UA-151124933-1');`}}
+        >
         </script>
       </ThemeProvider>
     </>

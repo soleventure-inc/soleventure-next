@@ -317,6 +317,7 @@ const Index = ({ title, description, ...props }) => {
                           {
                             item.benefits.map(benefit => (
                               <div
+                                key={benefit}
                                 style={{
                                   marginBottom: '8px'
                                 }}
