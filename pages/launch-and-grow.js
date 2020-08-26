@@ -21,7 +21,7 @@ const LaunchAndGrow = ({ title, description, ...props }) => {
             <Grid>
               <div className="grid__col grid__col--1-of-2">
                 <h2 style={{ marginTop: '80px'}}>Launch and Grow Your Freelance Business</h2>
-                <p className="lead">Be the first to test SoleVenture’s freelance app and give us feedback! Sign up for the beta by filling out the form below.</p>
+                <p className="lead">Everything to start and run your freelance business all in one place. Download the public beta.</p>
                 <a
                   href="https://play.google.com/apps/testing/com.soleventure"
                   style={{
