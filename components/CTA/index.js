@@ -26,7 +26,7 @@ export default function CTA() {
       <p style={{color: 'var(--baseMedium)'}}>Start a business • Access benefits • Join a powerful network • Grow your team • Streamline your cashflow</p>
       <ButtonBar>
         <a
-          href="https://google.com"
+          href="https://play.google.com/apps/testing/com.soleventure"
           style={{
             display: 'inline-block',
             margin: '16px 16px 0'
@@ -38,7 +38,7 @@ export default function CTA() {
           />
         </a>
         <a
-          href="https://google.com"
+          href="https://apps.apple.com/us/app/soleventure"
           style={{
             display: 'inline-block',
             margin: '16px 16px 0'
