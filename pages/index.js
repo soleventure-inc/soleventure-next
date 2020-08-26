@@ -160,7 +160,7 @@ const Index = ({ title, description, ...props }) => {
                 }}>The back-office platform for your company of one</h5>
                 <p className="lead">Start your company. Access personal benefits. Grow with our community of self-employed professionals.</p>
                 <a
-                  href="https://google.com"
+                  href="https://play.google.com/apps/testing/com.soleventure"
                   style={{
                     display: 'inline-block',
                     margin: '0 16px 0 0'
@@ -172,7 +172,7 @@ const Index = ({ title, description, ...props }) => {
                   />
                 </a>
                 <a
-                  href="https://google.com"
+                  href="https://apps.apple.com/us/app/soleventure"
                   style={{
                     display: 'inline-block',
                   }}
