@@ -191,7 +191,7 @@ export default function Header() {
                 }}>
                   <Link href="/launch-and-grow">
                     <a>
-                      Sign Up
+                      Download
                     </a>
                   </Link>
                 </span>
@@ -235,7 +235,7 @@ export default function Header() {
             </div>
               <BlockButton>
                 <Link href="/launch-and-grow">
-                  <a>Sign Up</a>
+                  <a>Download</a>
                 </Link>
               </BlockButton>
           </MobileNav>

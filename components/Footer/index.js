@@ -61,6 +61,15 @@ const ButtonContainer = styled.div`
   }
 `
 
+const DownloadContainer = styled.div`
+  display: flex;
+  justify-content: flex-end;
+  margin-top: ${({ theme }) => theme.space[3]};
+  @media screen and (max-width: ${({ theme }) => theme.breakpoints[4]}) {
+    justify-content: flex-start;
+  }
+`
+
 export default function Footer() {
 
   const primaryNav = [
@@ -165,10 +174,35 @@ export default function Footer() {
                 padding: '8px 16px',
               }}>
                 <Link href="/launch-and-grow">
-                  Sign Up
+                  Download
                 </Link>
               </span>
              </ButtonContainer>
+             <DownloadContainer>
+              <a
+                href="https://play.google.com/apps/testing/com.soleventure"
+                style={{
+                  display: 'inline-block',
+                  margin: '0 16px 0 0'
+                }}
+              >
+                <img
+                  src="/static/images/play-store.svg"
+                  height="40"
+                />
+              </a>
+              <a
+                href="https://apps.apple.com/us/app/soleventure"
+                style={{
+                  display: 'inline-block'
+                }}
+              >
+                <img
+                  src="/static/images/app-store.svg"
+                  height="40"
+                />
+              </a>
+             </DownloadContainer>
            </div>
            <div className="grid__col grid__col--1-of-2 grid__col--m-1-of-2">
              <FooterLogo>
