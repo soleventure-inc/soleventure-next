@@ -23,7 +23,7 @@ const LaunchAndGrow = ({ title, description, ...props }) => {
                 <h2 style={{ marginTop: '80px'}}>Launch and Grow Your Freelance Business</h2>
                 <p className="lead">Be the first to test SoleVenture’s freelance app and give us feedback! Sign up for the beta by filling out the form below.</p>
                 <a
-                  href="https://google.com"
+                  href="https://play.google.com/apps/testing/com.soleventure"
                   style={{
                     display: 'inline-block',
                     margin: '0 16px 0 0'
@@ -35,7 +35,7 @@ const LaunchAndGrow = ({ title, description, ...props }) => {
                   />
                 </a>
                 <a
-                  href="https://google.com"
+                  href="https://apps.apple.com/us/app/soleventure"
                   style={{
                     display: 'inline-block',
                   }}
