@@ -1,6 +1,13 @@
-import { Button } from '@components/Button'
 import { Box } from '@components/Box'
-import Link from 'next/link'
+import styled from 'styled-components'
+
+const ButtonBar = styled.div`
+  display: flex;
+  justify-content: center;
+  @media screen and (max-width: ${({ theme }) => theme.breakpoints[4]}) {
+    flex-direction: column;
+  }
+`
 
 export default function CTA() {
   return (
@@ -17,16 +24,32 @@ export default function CTA() {
       <h4>Get Started</h4>
       <p className="lead">Be the first to test SoleVenture’s freelance app and give us feedback!</p>
       <p style={{color: 'var(--baseMedium)'}}>Start a business • Access benefits • Join a powerful network • Grow your team • Streamline your cashflow</p>
-      <Link href="/launch-and-grow">
-        <a>
-          <Button
-            size={'lg'}
-            display={'block'}
-          >
-            Sign Up
-          </Button>
+      <ButtonBar>
+        <a
+          href="https://play.google.com/apps/testing/com.soleventure"
+          style={{
+            display: 'inline-block',
+            margin: '16px 16px 0'
+          }}
+        >
+          <img
+            src="/static/images/play-store.svg"
+            height="50"
+          />
         </a>
-      </Link>
+        <a
+          href="https://apps.apple.com/us/app/soleventure"
+          style={{
+            display: 'inline-block',
+            margin: '16px 16px 0'
+          }}
+        >
+          <img
+            src="/static/images/app-store.svg"
+            height="50"
+          />
+        </a>
+      </ButtonBar>
     </Box>
   )
 }
