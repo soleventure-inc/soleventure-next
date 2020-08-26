@@ -159,24 +159,29 @@ const Index = ({ title, description, ...props }) => {
                   color: 'var(--teal)'
                 }}>The back-office platform for your company of one</h5>
                 <p className="lead">Start your company. Access personal benefits. Grow with our community of self-employed professionals.</p>
-                <ButtonLink href="/launch-and-grow"
-                  bg={'var(--baseDark)'}
-                  color={'var(--white)'}
-                  marginRight="8px"
-                  size="lg"
+                <a
+                  href="https://google.com"
+                  style={{
+                    display: 'inline-block',
+                    margin: '0 16px 0 0'
+                  }}
                 >
-                  <a>
-                    Sign up
-                  </a>
-                </ButtonLink>
-                <ButtonGhostLink href="/launch-and-grow"
-                  color={'var(--white)'}
-                  size="lg"
+                  <img
+                    src="/static/images/play-store.svg"
+                    height="50"
+                  />
+                </a>
+                <a
+                  href="https://google.com"
+                  style={{
+                    display: 'inline-block',
+                  }}
                 >
-                  <a>
-                    Learn More
-                  </a>
-                </ButtonGhostLink>
+                  <img
+                    src="/static/images/app-store.svg"
+                    height="50"
+                  />
+                </a>
               </div>
               <div className="grid__col grid__col--1-of-2">
                 <HeroImgContainer>
