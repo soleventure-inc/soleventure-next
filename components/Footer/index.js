@@ -174,13 +174,13 @@ export default function Footer() {
                 padding: '8px 16px',
               }}>
                 <Link href="/launch-and-grow">
-                  Sign Up
+                  Download
                 </Link>
               </span>
              </ButtonContainer>
              <DownloadContainer>
               <a
-                href="https://google.com"
+                href="https://play.google.com/apps/testing/com.soleventure"
                 style={{
                   display: 'inline-block',
                   margin: '0 16px 0 0'
@@ -192,7 +192,7 @@ export default function Footer() {
                 />
               </a>
               <a
-                href="https://google.com"
+                href="https://apps.apple.com/us/app/soleventure"
                 style={{
                   display: 'inline-block'
                 }}
