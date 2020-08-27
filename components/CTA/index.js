@@ -25,7 +25,10 @@ export default function CTA() {
       <p className="lead">Be the first to test SoleVenture’s freelance app and give us feedback!</p>
       <p style={{color: 'var(--baseMedium)'}}>Start a business • Access benefits • Join a powerful network • Grow your team • Streamline your cashflow</p>
       <ButtonBar>
-        <a
+        <p>
+          <i>Coming Soon!</i>
+        </p>
+        {/*<a
           href="https://play.google.com/apps/testing/com.soleventure"
           style={{
             display: 'inline-block',
@@ -48,7 +51,7 @@ export default function CTA() {
             src="/static/images/app-store.svg"
             height="50"
           />
-        </a>
+        </a>*/}
       </ButtonBar>
     </Box>
   )

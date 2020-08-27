@@ -178,6 +178,7 @@ export default function Footer() {
                 </Link>
               </span>
              </ButtonContainer>
+             {/*
              <DownloadContainer>
               <a
                 href="https://play.google.com/apps/testing/com.soleventure"
@@ -203,6 +204,7 @@ export default function Footer() {
                 />
               </a>
              </DownloadContainer>
+             */}
            </div>
            <div className="grid__col grid__col--1-of-2 grid__col--m-1-of-2">
              <FooterLogo>
