@@ -159,7 +159,10 @@ const Index = ({ title, description, ...props }) => {
                   color: 'var(--teal)'
                 }}>The back-office platform for your company of one</h5>
                 <p className="lead">Start your company. Access personal benefits. Grow with our community of self-employed professionals.</p>
-                <a
+                <p>
+                  <i>Coming Soon!</i>
+                </p>
+                {/*<a
                   href="https://play.google.com/apps/testing/com.soleventure"
                   style={{
                     display: 'inline-block',
@@ -181,7 +184,7 @@ const Index = ({ title, description, ...props }) => {
                     src="/static/images/app-store.svg"
                     height="50"
                   />
-                </a>
+                </a>*/}
               </div>
               <div className="grid__col grid__col--1-of-2">
                 <HeroImgContainer>
