@@ -28,8 +28,8 @@ export default function CTA() {
         <p>
           <i>Coming Soon!</i>
         </p>
-        {/*<a
-          href="https://play.google.com/apps/testing/com.soleventure"
+        <a
+          href="https://play.google.com/store/apps/details?id=com.soleventure"
           style={{
             display: 'inline-block',
             margin: '16px 16px 0'
@@ -41,7 +41,7 @@ export default function CTA() {
           />
         </a>
         <a
-          href="https://apps.apple.com/us/app/soleventure"
+          href="https://apps.apple.com/ua/app/soleventure/id1494300495"
           style={{
             display: 'inline-block',
             margin: '16px 16px 0'
@@ -51,7 +51,7 @@ export default function CTA() {
             src="/static/images/app-store.svg"
             height="50"
           />
-        </a>*/}
+        </a>
       </ButtonBar>
     </Box>
   )
