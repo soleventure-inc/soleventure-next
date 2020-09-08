@@ -178,10 +178,9 @@ export default function Footer() {
                 </Link>
               </span>
              </ButtonContainer>
-             {/*
              <DownloadContainer>
               <a
-                href="https://play.google.com/apps/testing/com.soleventure"
+                href="https://play.google.com/store/apps/details?id=com.soleventure"
                 style={{
                   display: 'inline-block',
                   margin: '0 16px 0 0'
@@ -193,7 +192,7 @@ export default function Footer() {
                 />
               </a>
               <a
-                href="https://apps.apple.com/us/app/soleventure"
+                href="https://apps.apple.com/ua/app/soleventure/id1494300495"
                 style={{
                   display: 'inline-block'
                 }}
@@ -204,7 +203,6 @@ export default function Footer() {
                 />
               </a>
              </DownloadContainer>
-             */}
            </div>
            <div className="grid__col grid__col--1-of-2 grid__col--m-1-of-2">
              <FooterLogo>

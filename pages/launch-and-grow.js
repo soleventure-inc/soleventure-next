@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import Layout from '@components/Layout'
 import { Grid, Container } from '@components/Grid' 
 import styled from 'styled-components'
-import HubspotForm from 'react-hubspot-form'
+//import HubspotForm from 'react-hubspot-form'
 
 const FullWidth = styled.div`
   padding-top: 88px;
@@ -23,11 +23,8 @@ const LaunchAndGrow = ({ title, description, ...props }) => {
               <div className="grid__col grid__col--1-of-2">
                 <h2 style={{ marginTop: '80px'}}>Launch and Grow Your Freelance Business</h2>
                 <p className="lead">Everything to start and run your freelance business all in one place. Download the public beta.</p>
-                <p>
-                  <i>Coming Soon!</i>
-                </p>
-                {/*<a
-                  href="https://play.google.com/apps/testing/com.soleventure"
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.soleventure"
                   style={{
                     display: 'inline-block',
                     margin: '0 16px 0 0'
@@ -39,7 +36,7 @@ const LaunchAndGrow = ({ title, description, ...props }) => {
                   />
                 </a>
                 <a
-                  href="https://apps.apple.com/us/app/soleventure"
+                  href="https://apps.apple.com/ua/app/soleventure/id1494300495"
                   style={{
                     display: 'inline-block',
                   }}
@@ -48,7 +45,7 @@ const LaunchAndGrow = ({ title, description, ...props }) => {
                     src="/static/images/app-store.svg"
                     height="50"
                   />
-                </a>*/}
+                </a>
               </div>
               <div className="grid__col grid__col--1-of-2">
                 <img
@@ -62,7 +59,7 @@ const LaunchAndGrow = ({ title, description, ...props }) => {
             </Grid>
           </Container>
         </FullWidth>
-        <FullWidth>
+        {/*<FullWidth>
           <Container>
             <Grid>
               <div className="grid__col grid__col--12-of-12">
@@ -82,7 +79,7 @@ const LaunchAndGrow = ({ title, description, ...props }) => {
               </div>
             </Grid>
           </Container>
-        </FullWidth>
+        </FullWidth>*/}
       </Layout>
     </>
   )

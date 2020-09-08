@@ -159,11 +159,8 @@ const Index = ({ title, description, ...props }) => {
                   color: 'var(--teal)'
                 }}>The back-office platform for your company of one</h5>
                 <p className="lead">Start your company. Access personal benefits. Grow with our community of self-employed professionals.</p>
-                <p>
-                  <i>Coming Soon!</i>
-                </p>
-                {/*<a
-                  href="https://play.google.com/apps/testing/com.soleventure"
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.soleventure"
                   style={{
                     display: 'inline-block',
                     margin: '0 16px 0 0'
@@ -175,7 +172,7 @@ const Index = ({ title, description, ...props }) => {
                   />
                 </a>
                 <a
-                  href="https://apps.apple.com/us/app/soleventure"
+                  href="https://apps.apple.com/ua/app/soleventure/id1494300495"
                   style={{
                     display: 'inline-block',
                   }}
@@ -184,7 +181,7 @@ const Index = ({ title, description, ...props }) => {
                     src="/static/images/app-store.svg"
                     height="50"
                   />
-                </a>*/}
+                </a>
               </div>
               <div className="grid__col grid__col--1-of-2">
                 <HeroImgContainer>
