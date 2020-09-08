@@ -25,9 +25,6 @@ export default function CTA() {
       <p className="lead">Be the first to test SoleVenture’s freelance app and give us feedback!</p>
       <p style={{color: 'var(--baseMedium)'}}>Start a business • Access benefits • Join a powerful network • Grow your team • Streamline your cashflow</p>
       <ButtonBar>
-        <p>
-          <i>Coming Soon!</i>
-        </p>
         <a
           href="https://play.google.com/store/apps/details?id=com.soleventure"
           style={{

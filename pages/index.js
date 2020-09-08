@@ -159,9 +159,6 @@ const Index = ({ title, description, ...props }) => {
                   color: 'var(--teal)'
                 }}>The back-office platform for your company of one</h5>
                 <p className="lead">Start your company. Access personal benefits. Grow with our community of self-employed professionals.</p>
-                <p>
-                  <i>Coming Soon!</i>
-                </p>
                 <a
                   href="https://play.google.com/store/apps/details?id=com.soleventure"
                   style={{
