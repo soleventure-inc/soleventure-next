@@ -124,7 +124,7 @@ export default function Header() {
     }, {
       type: 'external',
       name: 'Insurance',
-      href: 'https://marketing.soleventure.com/insurance-partner'
+      href: 'https://marketing.soleventure.com/who-needs-health-coverage'
     },{
       type: 'external',
       name: 'Blog',
