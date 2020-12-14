@@ -121,11 +121,18 @@ export default function Header() {
       type: 'local',
       name: 'How it Works',
       href: '/how-it-works'
-    }, {
+    },
+    {
+      type: 'external',
+      name: 'Incorporate',
+      href: 'https://marketing.soleventure.com/business-formation'
+    }, 
+    {
       type: 'external',
       name: 'Insurance',
       href: 'https://marketing.soleventure.com/who-needs-health-coverage'
-    },{
+    },
+    {
       type: 'external',
       name: 'Blog',
       href: 'https://blog.soleventure.com/blog'
@@ -164,7 +171,7 @@ export default function Header() {
                   if(navItem.type === 'local') {
                     return (
                       <NavItem key={navItem.name}>
-                        <NavLink className={'navLink'} href={navItem.href}>
+                        <NavLink className={'NavLink'} href={navItem.href}>
                           <a>
                             {navItem.name}
                           </a>
