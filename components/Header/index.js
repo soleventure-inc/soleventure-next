@@ -129,8 +129,13 @@ export default function Header() {
     }, 
     {
       type: 'external',
-      name: 'Insurance',
+      name: 'Health Insurance',
       href: 'https://marketing.soleventure.com/who-needs-health-coverage'
+    },
+    {
+      type: 'local',
+      name: 'Life Insurance',
+      href: '/life-insurance'
     },
     {
       type: 'external',
